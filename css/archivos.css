@@ -1,0 +1,456 @@
+/*********ESRILOS GENERALES*********/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #000;
+}
+h5{
+    color: #d3d3d3;
+}
+body{
+    background-color: #000;
+}
+.title{
+    color: rgb(255, 0, 0);
+    font-size: 75px;
+    padding-left: 25px;
+}
+.subtitle{
+    color: rgba(0, 0, 0, 0.993);
+    font-size: 24px;
+    padding-left: 25px;
+}
+a{
+    text-decoration: none;
+    color:#d3d3d3
+}
+header article{
+    background-image: url(https://tsnnecochea.com.ar/wp-content/uploads/2020/05/OF55GNGBMRH3DMI46OQSIOSR6U-scaled.jpg);
+    padding-bottom: 700px;
+}
+main{
+    background-color: #000;;
+}
+.border{
+    border: solid 1px white;
+}
+/************RESPONSIVE**************/
+/****DESKTOP****/
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+.imagenes{
+    width: 400px;
+    height: 300px;
+}
+.headFlex{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 20px;
+}
+div{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+}
+.menuFlex{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+
+}
+div nav ul{
+    list-style: none;
+}
+div nav {
+    margin-top: 30px;
+    width: 100%;
+
+}
+ul {
+    list-style: none;
+
+}
+li {
+    display: inline-block;
+    position:relative;
+    margin: 20px;
+    padding: 10px;
+    border:solid 1px red;	
+    background-color: black;
+    
+}
+ul ul
+{
+    position: absolute;
+    top: 40px; 
+    left: -20px;
+    display: none;
+}
+ul ul li {
+    display: block;
+}
+ul li:hover ul {
+    display:block;
+}
+
+li:hover{
+    background-color: red;
+}
+#terminos{
+    margin-left: 33%;
+}
+#redes{
+    margin-left: 35%;
+}
+.seccion{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+    background-color: #000;
+    margin-top: 1rem;
+}
+
+div article{
+    margin: 20px;
+    flex-wrap: nowrap;
+}
+.paquetes{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin: 20px;
+    border: solid 2px;
+    border-color: red;
+    padding: 10px;
+    padding-left: 5%;
+    
+}
+
+.paque{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    background-color: red;
+    border: solid 2px;
+    border-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    padding-left: 20%;
+}
+.destinos{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin: 20px 0px 10px 20px;
+    padding-left: 20%;
+}
+
+#contacto{
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 15px;
+}
+.formulario{
+    width: 60%;
+    height: 30px;
+    margin-left: 20%;
+    padding-bottom: 5px;
+    color: rgba(255, 0, 0, 0.993);
+    font-size: 22px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.button{
+    background-color: red;
+    color: white;
+    font-size: 26px;
+    width: 200px;
+    height: 50px;
+    margin-left: 35%;
+    margin-bottom: 10px;
+}
+.mar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pie{
+    background-color: rgb(255, 0, 0);
+    padding-top: 30px;
+}
+footer p{
+    color: white;
+    margin-left: 30%;
+}
+footer ul li:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+}
+/*GRIDAREAS*/
+#GridAreas{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "cuerpo cuerpo publicidad"
+    "pie pie pie"
+    ;
+    grid-template-columns: 33.3% auto 150px;
+    grid-template-rows: 1000px auto 250px;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+}
+header{
+    grid-area: cabeza;
+}
+footer{
+    grid-area: pie;
+}
+main{
+    grid-area: cuerpo;
+}
+aside{
+    grid-area: publicidad;
+}
+.destinosFlex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.transporteFlex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/*TABLET*/
+@media (min-width: 600px) and (max-width: 1023px){
+    #GridAreas{
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "cuerpo cuerpo "
+        "publicidad publicidad"
+        "pie pie"
+        ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1000px auto 200px 450px;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+    }
+    .logo{
+        width: 150px;
+        height: 100px;
+        margin-top: 2%;
+        margin-left: 35%;
+    }
+    .headFlex{
+        display: flex;
+        flex-flow: column;
+    }
+    .menuFlex{
+        display:flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+
+    }
+    li{
+        width: 95%;
+        margin: 1px;
+        margin-left: 10px;
+    }
+    ul ul{
+        width: 100%;
+        margin: 1px;
+        margin-left: 10px;
+    }
+    ul ul{
+        position: relative;
+        top:1px; 
+        left: -20px;
+        display: none;
+    }
+    header article{
+        background-image: url(https://tsnnecochea.com.ar/wp-content/uploads/2020/05/OF55GNGBMRH3DMI46OQSIOSR6U-scaled.jpg);
+        padding-bottom: 300px;
+    }
+    .seccion{
+        margin-right: 5%;
+    }
+    .headFlex{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .destinosFlex{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .transporteFlex{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    #contacto{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .formulario{
+        width: 85%;
+        height: 30px;
+        margin-left: 5%;
+    }
+    .button{
+        margin-left: 35%;
+    }
+    .pie{
+        background-color: rgb(255, 0, 0);
+        padding-top: 30px;
+        width: 100%;
+    }
+    footer p{
+        color: white;
+        margin-top: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    footer ul li:hover{
+        background-color: rgb(255, 255, 255);
+        color: rgb(255, 0, 0);
+    }
+    #terminos{
+        margin-left: 2%;
+        margin-right: 5%;
+    }
+    #redes{
+        margin-left: 2%;
+        margin-right: 5%;
+    }
+
+}
+/*SMARTPHONE*/
+@media (max-width: 599px){
+    #GridAreas{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "cuerpo"
+        "publicidad"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto 200px 430px;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+    }
+    .logo{
+        width: 150px;
+        height: 100px;
+        margin-top: 2%;
+        margin-left: 35%;
+    }
+    .headFlex{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .menuFlex{
+        display:flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+
+    }
+    li{
+        width: 90%;
+        margin: 1px;
+        margin-left: 10px;
+    }
+    ul ul{
+        width: 100%;
+        margin: 1px;
+        margin-left: 10px;
+    }
+    ul ul{
+        position: relative;
+        top:1px; 
+        left: -20px;
+        display: none;
+    }
+    header article{
+        background-image: url(https://tsnnecochea.com.ar/wp-content/uploads/2020/05/OF55GNGBMRH3DMI46OQSIOSR6U-scaled.jpg);
+        padding-bottom: 300px;
+    }
+    .centrar{
+        margin-left: 5px;
+    }
+    .centrar h4{
+        margin-left: 15%;
+    }
+    
+    iframe{
+        width: 420px;
+        height: 250px;
+    }
+    #contacto{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .formulario{
+        width: 85%;
+        height: 30px;
+        margin-left: 5%;
+    }
+    .button{
+        margin-left: 25%;
+    }
+    .pie{
+        background-color: rgb(255, 0, 0);
+        padding-top: 30px;
+        width: 100%;
+    }
+    footer p{
+        color: white;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    footer ul li:hover{
+        background-color: rgb(255, 255, 255);
+        color: rgb(255, 0, 0);
+    }
+    #terminos{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #redes{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    div article{
+        margin: 5px;
+        flex-wrap: nowrap;
+    }
+    div{
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 20px;
+    }
+    .destinosFlex{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .transporteFlex{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+
+
+
+}

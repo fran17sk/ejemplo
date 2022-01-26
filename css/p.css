@@ -1,0 +1,33 @@
+/*GRIDAREAS*/
+.GridAreas{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "titulo titulo titulo"
+    "destinos destinos destinos"
+    "titulo titulo titulo"
+    "destinos destinos none"
+    "titulo titulo titulo"
+    "contacto contacto brazo"
+    "pie pie pie"
+    ;
+    grid-template-columns: 33.3% auto 33.3%;
+    grid-template-rows: repeat(8,400px);
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+}
+header{
+    grid-area: cabeza;
+}
+footer{
+    grid-area: pie;
+}
+main h2{
+    grid-area: titulo;
+}
+main form div{
+    grid-area: destinos;
+}
+main form fieldset{
+    grid-area: contacto;
+}

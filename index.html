@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYFTRAVEL</title>
+    <link rel="shortcut icon" href="../DESAFIO1/img/LOGO.jpg">
+    <link rel="stylesheet" type="text/css" href="./css/archivos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+</head>
+<body id="GridAreas">
+    <header>
+        <div class="headFlex">
+            <!-- logo -->
+            <img src="../DESAFIO1/img/LOGO.jpg" alt="" class="logo">
+            <nav>
+                <ul class="menuFlex">
+                    <a href="./index.html"><li>INICIO</li></a>
+                    <li><a href="#destinos">DESTINOS</a>
+                        <ul>
+                            <li><a href="./main/bariloche.html">BARILOCHE</a></li>
+                            <li><a href="./main/camboriu.html">CAMBORIU</a></li>
+                            <li><a href="./main/vcp.html">V C P</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#transporte">TRANSPORTE</a></li>
+                    <li><a href="./main/fotos.html">GALERIA DE FOTOS</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="./main/nosotros.html">NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <article>
+            <h1 class="title">#MYF TRAVEL</h1>
+            <h3 class="subtitle">LA AGENCIA DE VIAJES DE EGRESADOS MAS GRANDE DE ARGENTINA</h3>
+        </article>
+        
+    </header> 
+    <main>
+        <form id="destinos">
+            <h2 class="seccion" >DESTINOS </h2>
+            <div class="destinosFlex">
+                <article class="centrar">
+                    <h4 class="destinos"><a href="./main/bariloche.html">BARILOCHE</a></h4>
+                    <a href="./main/bariloche.html"><img src="./img/Barilo.jpg" alt="" class="imagenes"></a>
+                    <a href="#contacto"><h4 class="paquetes">PAQUETES DISPINIBLES</h4></a>
+                    <a href="#contacto"><h5 class="paque">7 DIAS Y 5 NOCHES</h5></a>
+                    <a href="#contacto"><h5 class="paque">10 DIAS Y 7 NOCHES</h5></a>
+                </article>
+                <article>
+                    <h4 class="destinos"><a href="./main/vcp.html">VILLA CARLOS PAZ</a></h4>
+                    <a href="./main/vcp.html"><img src="./img/vcp.jpg" alt="" class="imagenes"></a>
+                    <a href="#contacto"><h4 class="paquetes">PAQUETES DISPINIBLES</h4></a>
+                    <a href="#contacto"><h5 class="paque">10 DIAS Y 7 NOCHES</h5></a>
+                    <a href="#contacto"><h5 class="paque">14 DIAS Y 11 NOCHES</h5></a>
+                </article>
+                <article class="centrar">
+                    <h4 class="destinos"><a href="./main/camboriu.html">CAMBORIU</a></h4>
+                    <a href="./main/camboriu.html"><img src="./img/camboriu.jpg" class="imagenes"></a>
+                    <a href="#contacto"><h4 class="paquetes">PAQUETES DISPINIBLES</h4></a>
+                    <a href="#contacto"><h5 class="paque">10 DIAS Y 7 NOCHES</h5></a>
+                    <a href="#contacto"><h5 class="paque">15 DIAS Y 12 NOCHES</h5></a>
+                </article>
+            </div>
+        </form>
+        <form id="transporte">
+            <h2 class="seccion">TRANSPORTE</h2>
+            <div class="transporteFlex">
+                <article>
+                    <h3 class="destinos">Colectivos</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EWI40HSyW9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </article>
+                <article>
+                    <h3 class="destinos">Avion</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/u3CaSuTtctU?start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </article>
+            </div>
+        </form>
+        <form id="contacto">
+            <h2 class="seccion">CONTACTO</h2>
+            <fieldset class="mar porde">
+                <input type="text" placeholder="Nombre completo: " id="nombre" class="formulario">
+                <br><br>
+                <input type="email" placeholder="Ingresar email" id="mail" class="formulario">
+                <br><br>
+                <input type="text" placeholder="Colegio: " id="colegio" class="formulario">
+                <br><br>
+                <input type="number" placeholder="Telefono: " id="telefono" class="formulario">
+                <br><br>
+                <input type="submit" value="ENVIAR" class="button">
+            </fieldset>
+
+        </form>
+    </main>
+    <aside>
+        <h5>publicidad</h5>
+    </aside>
+    <footer class="pie">
+        <ul id="terminos">
+            <li><a href="http://www.turismosalta.gov.ar/">MINISTERIO DE TURISMO</a></li>
+            <li><a href="">LEGALES</a></li>
+            <li><a href="./tycondiciones.PDF">TERMINOS Y CONDICIONES</a></li>
+        </ul>
+        <!-- REDES SOCIALES -->
+        <ul id="redes">
+            <li><a href="https://www.facebook.com/profile.php?id=100007271433080">FACEBOOK</a></li>
+            <li><a href="https://www.instagram.com/fran17sk/?hl=es-la">INSTAGRAM</a></li>
+            <li><a href="https://www.youtube.com/channel/UCRHbG0iYrQa5yekfqtVNVKg">YOUTUBE</a></li>
+            <li><a href="https://twitter.com/Fraan_Maxii">TWITTER</a></li>
+        </ul>
+        <p>MYF TRAVEL agencia de turismo estudiantil - Todos los derechos reservados - &copy;2021 - desarrollado por Francisco M. Cruz</p>
+
+    </footer>
+    
+    
+</body>
+</html>
